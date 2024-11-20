@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Techy DevHarsh</title>
+  <link rel="stylesheet" href="index.css"> <!-- Link to the external CSS file -->
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header class="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png" alt="YouTube Logo" class="youtube-logo">
+    <h1>Welcome to Techy DevHarsh</h1>
+  </header>
+
+  <!-- Video Embed Section -->
+  <div class="video-container">
+    <!-- Paste your YouTube Embed code here -->
+    <div class="video-frame">
+      <iframe id="youtube-video" width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+  </div>
+
+  <!-- Article Section -->
+  <section class="article-section">
+    <h2>How to make free 16 GB ram server</h2>
+    <pre>
+Hello Guys Welcome to my website, You may have seen the video above now here's all the links
+and if you click the button below it will show you the special startup command :D
+    </pre>
+  </section>
+
+  <!-- Button to trigger the popup -->
+  <button class="btn" onclick="openPopup()">Click me!</button>
+
+  <!-- Popup Modal -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Here is the startup command</h2>
+      <p>To start your server, use the following command: <code>./start_server.sh</code></p>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+  <!-- Google AdSense Script -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+  <script>
+    (adsbygoogle = window.adsbygoogle || []).push({
+      google_ad_client: "YOUR_ADSENSE_CLIENT_ID",
+      enable_page_level_ads: true
+    });
+  </script>
+
+  <!-- JavaScript for Popup -->
+  <script>
+    function openPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <p>&copy; 2024 Techy DevHarsh. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

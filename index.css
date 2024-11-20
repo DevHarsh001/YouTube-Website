@@ -1,0 +1,199 @@
+/* Ambient Black and Blue Background with smoother animation */
+@keyframes moveBackground {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 100% 100%;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  body {
+    background: linear-gradient(135deg, #000000, #1a237e);
+    background-size: 200% 200%;
+    animation: moveBackground 30s ease infinite;
+    color: #fff;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    overflow-x: hidden;  /* Prevent horizontal scroll */
+    
+    /* Smooth Scrolling */
+    scroll-behavior: smooth; /* This makes the scrolling smooth */
+  }
+  
+  /* Ensure content can scroll if it overflows */
+  html, body {
+    height: auto;
+    width: 100%;
+  }
+  
+  /* Header Section */
+  .header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    width: 100%;
+    position: relative; /* Ensure header stays at the top */
+    z-index: 10;
+  }
+  
+  .youtube-logo {
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    margin: 0;
+    color: #ffffff;
+  }
+  
+  /* YouTube Video Frame */
+  .video-container {
+    max-width: 80%;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .video-frame {
+    border: 5px solid #4caf50;
+    border-radius: 8px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  /* Article Section */
+  .article-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 40px auto;
+    text-align: center;
+  }
+  
+  .article-section h2 {
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+  
+  .article-section pre {
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Buttons with pop-out effect */
+  .btn {
+    background: linear-gradient(135deg, #4caf50, #388e3c);
+    color: white;
+    padding: 15px 30px;
+    margin: 20px 0;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
+    display: inline-block;
+    text-align: center;
+  }
+  
+  .btn:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.3);
+    background: linear-gradient(135deg, #388e3c, #4caf50);
+  }
+  
+  .btn:focus {
+    outline: none;
+  }
+  
+  /* Popup Modal */
+  .popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .popup-content {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3);
+  }
+  
+  .popup-content h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .popup-content p {
+    font-size: 1rem;
+    margin-bottom: 20px;
+  }
+  
+  .popup-content code {
+    background-color: #f1f1f1;
+    padding: 10px;
+    font-size: 1.1rem;
+    color: #333;
+    border-radius: 5px;
+    display: block;
+    margin-top: 10px;
+  }
+  
+  .close-btn {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .close-btn:hover {
+    background-color: #d32f2f;
+  }
+  
+  /* Footer Section */
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #1a237e;
+    color: white;
+    padding: 5px 0;  /* Smaller footer */
+    font-size: 0.8rem;
+  }
+  
+  /* Make the popup button visible above the footer */
+  .btn {
+    position: relative;
+    z-index: 20; /* Ensures it stays on top of footer */
+  }
+  
