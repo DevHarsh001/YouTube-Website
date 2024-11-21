@@ -1,6 +1,6 @@
 /* Ambient Black and Blue Background with smoother animation */
 @keyframes moveBackground {
-    0% {
+    500% {
       background-position: 0 0;
     }
     50% {
@@ -196,4 +196,10 @@
     position: relative;
     z-index: 20; /* Ensures it stays on top of footer */
   }
-  
+  .AD1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+  }
