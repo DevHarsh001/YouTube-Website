@@ -23,6 +23,32 @@
       <button class="btn btn-instagram" onclick="window.open('https://www.instagram.com/harshtiwari_013/')">Instagram</button>
     </div>
   </div>
+
+  <script type="text/javascript" src="//www.highperformanceformat.com/894fcdde3c54f5f30784233c8e15e00d/invoke.js"></script>
+
+  <section class="Clickme">
+  <button class="btn" onclick="openPopup()">My UPI</button>
+  </section>
+
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <h2>Donate me by Upi</h2>
+      <p>Note: This is a donation made by you to support us. We are not begging<code>himanshu013@fam</code></p>
+      <button class="close-btn" onclick="closePopup()">Close</button>
+    </div>
+  </div>
+
+
+
+  <script>
+    function openPopup() {
+      document.getElementById('popup').style.display = 'flex';
+    }
+
+    function closePopup() {
+      document.getElementById('popup').style.display = 'none';
+    }
+  </script>
   
   <footer class="footer">
     <p>&copy; 2024 Harsh Tiwari. All Rights Reserved.</p>
