@@ -11,9 +11,9 @@
   }
   
   body {
-    background: linear-gradient(135deg, #000000, #1a237e);
+    background: linear-gradient(135deg, #ffffff, #000000);
     background-size: 200% 200%;
-    animation: moveBackground 10s ease infinite;
+    animation: moveBackground 15s ease infinite;
     color: #fff;
     font-family: Arial, sans-serif;
     margin: 0;
@@ -23,8 +23,6 @@
     align-items: flex-start;
     flex-direction: column;
     overflow-x: hidden;  
-    
-    
     scroll-behavior: smooth; 
   }
   
@@ -39,18 +37,20 @@
     display: flex;
     align-items: center;
     padding: 20px;
-    background-color: rgba(2, 8, 65, 0.315);
+    background-color: rgb(0, 0, 0);
     width: 100%;
     position: relative; 
     z-index: 10;
+    height: 65px;
   }
   
-  .youtube-logo {
-    width: 90px;
-    height: 75px;
+  .header-logo {
+    width: 80px;
+    height: auto;
     margin-right: 20px;
+    border-radius: 100px;
   }
-  
+
   h1 {
     font-size: 2.5rem;
     margin: 0;
@@ -60,25 +60,33 @@
 
   .video-container {
     max-width: 80%;
-    margin: 40px auto;
+    /* margin: 40px auto; */
+    margin-left: 35px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
   }
-  
+
   .video-frame {
-    border: 5px solid #4caf50;
-    border-radius: 8px;
+    border: 5px solid #00000000;
+    border-radius: 25px;
     padding: 10px;
     background-color: rgba(0, 0, 0, 0.5);
+    margin-left: 50px;
+  }
+
+  .video-frame:hover {
+    transform: scale(1.02);
   }
   
-
   .article-section {
     width: 80%;
     max-width: 800px;
     margin: 40px auto;
     text-align: center;
+       
   }
   
   .article-section h2 {
@@ -91,7 +99,6 @@
     line-height: 1.6;
   }
   
-
   .btn {
     background: linear-gradient(135deg, #4caf50, #388e3c);
     color: white;
@@ -119,7 +126,6 @@
     outline: none;
   }
   
-  /* Popup Modal */
   .popup {
     display: none;
     position: fixed;
@@ -176,10 +182,9 @@
   .close-btn:hover {
     background-color: #d32f2f;
   }
-  
  
   .footer {
-    position: fixed;
+    position: relative;
     bottom: 0;
     left: 0;
     width: 100%;
@@ -202,17 +207,57 @@
     height: 100vh;
     background-color: #f0f0f0;
   }
+
   .btn-AboutCreator {
     background: linear-gradient(135deg, #7289da, #5f6b9e);
-    margin-left: 25px;
+    margin-left: 30%;
   }
+  
   .BodyGrey {
-    width: 80%;
+    width: 40%;
     max-width: 900px;
     margin: 40px auto;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.459);
     padding: 40px;
     border-radius: 10px;
+    transition: transform 0.3s ease;
+    margin-left: 40px;
+    margin-top: 50px;
+   
   }
+  
+  .BodyGrey:hover{
+    transform: scale(1.02);
+    background-color: #5e5d5d44;
+    border-radius: 25px;
+    border-color: #000000;
+    border: black;
+         
+  }
+
+  .pop-out-section {
+    padding: 20px;
+    background-color: #10154d79;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease; 
+  }
+  
+  .pop-out-section:hover {
+    transform: scale(1.02); 
+  }
+  .NoTooth {
+    margin-left: 60px;
+    margin-bottom: auto;
+    margin-right: 0;
+    margin-top: 100x;
+    width: 400px;
+    height: 400px;
     
+    padding-left: 50000;
+    
+  }
+  .NoTooth:hover{
+    transform: scale(1.09); 
+  }
